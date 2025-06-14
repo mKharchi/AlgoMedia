@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+
+:root{
+  --onyx:#222526;
+  --graphite:#353a3e;
+  --platinum:#e0e0e0;
+  --jet-black:#1a1a1a;
+  --ash:#bfbfbf;
+  --font-family:'Fira Sans';
+  --font-family-secondary:'Cabin';
+}
+
+@theme inline{
+  --color-primary: var(--platinum);
+  --color-secondary: var(--jet-black);
+  --color-tertiary:var(--ash) ;
+  --color-accent: var(--onyx);
+  --color-background: var(--graphite);
+}
+
+
+
+*{
+  box-sizing: border-box;
+  font-family: var(--font-family) ;
+}
+
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  color: var(--color-secondary);
+  background-color: var(--color-background);
+  transition: all 0.3s ease-in-out;
+} 
+
+/**
+  * i want a scroll to the section to be smooth
+  * i want the scroll to be smooth
+  */
+
+html {
+  scroll-behavior: smooth;
+}
